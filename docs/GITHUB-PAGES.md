@@ -4,7 +4,7 @@ Toto je kopie klientského webu z [CCNplus/tesari-hradec](https://github.com/CCN
 
 ## Publikování
 
-- Adresa projektového webu: `https://sebrlicek-team.github.io/tesari-hradec/`.
+- Aktuálně nakonfigurovaná vlastní doména GitHub Pages: `https://tesari-hradec.seb-dev.cloud/`. Výchozí adresa `https://sebrlicek-team.github.io/tesari-hradec/` na ni přesměrovává.
 - V Settings → Pages nastavte Build and deployment → Source: GitHub Actions.
 - Workflow `.github/workflows/pages.yml` běží pouze po pushi na `main` nebo ručním spuštění. Nejprve vykoná `npm test && npm run build`, poté `node scripts/prepare-github-pages.mjs` a nasadí `dist`.
 - Workflow `.github/workflows/validate.yml` zachovává kontrolu `Test and build` pro pull requesty.
@@ -14,10 +14,14 @@ Toto je kopie klientského webu z [CCNplus/tesari-hradec](https://github.com/CCN
 
 Základ šablony používá absolutní cesty od kořene webu. Přípravný skript je převádí na relativní cesty funkční na projektové adrese i na vlastní doméně, přepíše canonical a sitemap, zkontroluje odkazy a vytvoří náhradní HTML přechody pro čtyři původní cesty `.htm`. GitHub Pages neposkytuje v tomto projektu skutečné HTTP 301 z `_redirects`; HTML přechody používají meta refresh a odkaz.
 
-Náhled zůstává `noindex,nofollow` v každém HTML včetně 404 a starých cest. GitHub Pages ignoruje soubor `_headers`, takže na této platformě nelze z projektu nastavit `X-Robots-Tag`. Soubor `robots.txt` v projektové cestě není kořenovým robots souborem celé domény github.io; zákaz indexace proto stojí na meta robots v HTML. Produkční doména a povolení indexace vyžadují samostatné zadání.
+Náhled zůstává `noindex,nofollow` v každém HTML včetně 404 a starých cest. GitHub Pages ignoruje soubor `_headers`, takže na této platformě nelze z projektu nastavit `X-Robots-Tag`. Na vlastní doméně je `robots.txt` v kořeni. Zákaz indexace je současně v meta robots na každé HTML stránce. Při návratu na výchozí projektovou adresu by projektový `robots.txt` nebyl kořenovým robots souborem celé domény github.io. Produkční doména a povolení indexace vyžadují samostatné zadání.
 
 Formulář v této kopii není aktivní. Kontakty zůstávají telefon a `mailto`; žádné zprávy se při testování neodesílají.
 
 ## Ověření
 
 Před předáním spustit `npm test && npm run build && node scripts/prepare-github-pages.mjs`, ověřit workflow `Test and build` pro poslední commit PR a po merge úspěšné nasazení stejného commitu na projektové adrese. Zkontrolovat šest stránek, obrázek, mobilní navigaci, canonical, sitemap a noindex.
+
+## Stav vlastní domény
+
+Při prvním nasazení GitHub Pages přesměrovávaly výchozí adresu na HTTP vlastní domény a HTTPS certifikát neodpovídal hostname. DNS CNAME ukazuje na `sebrlicek-team.github.io`. Před označením publikování za hotové je nutné ověřit platný certifikát, přesměrování na HTTPS a živé stránky.
