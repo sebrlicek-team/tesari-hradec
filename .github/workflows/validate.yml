@@ -1,0 +1,29 @@
+name: CCN validation
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    name: Test and build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Install dependencies when declared
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          elif node -e "const p=require('./package.json');process.exit(Object.keys({...p.dependencies,...p.devDependencies}).length ? 0 : 1)"; then
+            echo 'Dependencies require a committed package-lock.json and npm ci.' >&2
+            exit 1
+          fi
+      - name: Test and build the active project
+        run: npm test && npm run build
