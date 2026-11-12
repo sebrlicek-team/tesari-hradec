@@ -45,3 +45,4 @@
 - Zdrojový commit klientského repozitáře: `4c1f10a90a239071405e23226c797760da4575ed`.
 - Cílová projektová adresa: `https://sebrlicek-team.github.io/tesari-hradec/`; pracovní náhled zůstává `noindex`.
 - GitHub Pages publikuje upravené `dist` podle `docs/GITHUB-PAGES.md`. Nastavení Pages a skutečné nasazení je nutné ověřit.
+- Po prvním Pages deployi (commit `782f6b39d1eab2e0f83add0ff474538e8e8d8cbd`) workflow prošlo, ale výchozí adresa přesměrovává na `http://tesari-hradec.seb-dev.cloud/`; HTTPS certifikát vlastní domény neodpovídá hostname. Odkazy s cestou `/tesari-hradec/` na této doméně vracely 404. Relativní odkazy jsou připravené v následné opravě; finální volba domény a nové nasazení zbývají.
