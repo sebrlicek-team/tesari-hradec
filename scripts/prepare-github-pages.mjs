@@ -64,9 +64,10 @@ for (const file of generated) {
   if (!/<meta name="robots" content="noindex,nofollow">/.test(html)) throw new Error('Chybí noindex: ' + file);
   for (const [, , value] of html.matchAll(/\b(href|src|poster|data-src)="([^"]*)"/g)) {
     if (value.startsWith('/')) throw new Error('Absolutní lokální cesta ve výsledku: ' + value);
-    if (!value.startsWith('./') && !value.startsWith('../')) continue;
+    if (/^(?:[a-z][a-z0-9+.-]*:|#|\?)/i.test(value)) continue;
     const baseFile = 'https://local.invalid/' + path.relative(dist, file).split(path.sep).join('/');
     const target = new URL(value, baseFile);
+    if (target.hostname !== 'local.invalid') continue;
     const relative = decodeURIComponent(target.pathname).slice(1);
     const asset = path.join(dist, relative.endsWith('/') ? relative + 'index.html' : relative);
     try { await fs.access(asset); } catch { throw new Error('Chybějící soubor GitHub Pages: ' + value); }
