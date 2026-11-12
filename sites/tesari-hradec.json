@@ -1,0 +1,538 @@
+{
+  "name": "Tesaři Hradec Králové",
+  "tagline": "Ing. Petr Vacek · střechy a dřevěné konstrukce",
+  "url": "https://tesari-hradec.cz.ccn2.profiwh.com",
+  "indexable": false,
+  "theme": {
+    "accent": "#cb8544",
+    "ink": "#192c2b",
+    "paper": "#f4f0e8",
+    "serif": false
+  },
+  "navigation": [
+    {
+      "label": "Úvod",
+      "href": "/"
+    },
+    {
+      "label": "Tesařství",
+      "href": "/tesarske-prace/"
+    },
+    {
+      "label": "Pokrývačství",
+      "href": "/pokryvacske-prace/"
+    },
+    {
+      "label": "Klempířství",
+      "href": "/klempirske-prace/"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/kontakt/"
+    }
+  ],
+  "footer": "Ing. Petr Vacek · K Meteoru 775/2, Hradec Králové – Svobodné Dvory · IČ 88756360. Úvodní fotografie je ilustrační.",
+  "footerLinks": [
+    {
+      "label": "Služby",
+      "href": "/sluzby/"
+    },
+    {
+      "label": "Kontakt",
+      "href": "/kontakt/"
+    },
+    {
+      "label": "E-mail",
+      "href": "mailto:vacek.ptr@gmail.com"
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Tesařské a střešní práce v Hradci Králové",
+      "description": "Tesaři Hradec: tesařské, pokrývačské a klempířské práce, střechy a dřevěné konstrukce.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "uvod",
+          "variant": "cover",
+          "eyebrow": "TESAŘI HRADEC · HRADEC KRÁLOVÉ",
+          "title": "Dobrá střecha začíná poctivou prací.",
+          "intro": "Střechy na klíč, tesařské, pokrývačské a klempířské práce. Od konstrukce po dokončení.",
+          "media": {
+            "src": "/assets/tesari-hero.jpg",
+            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+          },
+          "actions": [
+            {
+              "label": "Prohlédnout služby",
+              "href": "/sluzby/"
+            },
+            {
+              "label": "Zavolat +420 607 719 804",
+              "href": "tel:+420607719804"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "sluzby",
+          "eyebrow": "CO DĚLÁME",
+          "title": "Od krovu po hotovou střechu.",
+          "intro": "Dřevo, krytina a klempířské detaily v návaznosti na celou stavbu.",
+          "items": [
+            {
+              "title": "Tesařské práce",
+              "text": "Krovy, pergoly, altány, přístřešky a opravy dřevěných konstrukcí.",
+              "category": "01 / DŘEVO",
+              "link": {
+                "label": "Více o službách",
+                "href": "/tesarske-prace/"
+              }
+            },
+            {
+              "title": "Pokrývačské práce",
+              "text": "Nové střechy, výměna krytin, rekonstrukce a údržba.",
+              "category": "02 / STŘECHA",
+              "link": {
+                "label": "Více o službách",
+                "href": "/pokryvacske-prace/"
+              }
+            },
+            {
+              "title": "Klempířské práce",
+              "text": "Oplechování, okapové systémy, falcované krytiny a zakázkové prvky.",
+              "category": "03 / DETAIL",
+              "link": {
+                "label": "Více o službách",
+                "href": "/klempirske-prace/"
+              }
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "id": "pristup",
+          "eyebrow": "NAVAZUJÍCÍ ŘEMESLA",
+          "title": "Jedna střecha. Jeden celek.",
+          "image": {
+            "src": "/assets/tesari-hero.jpg",
+            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+          },
+          "paragraphs": [
+            "Střešní konstrukce, krytina a klempířské detaily musí fungovat společně.",
+            "Pro konkrétní rozsah prací a termín nás kontaktujte telefonicky."
+          ]
+        },
+        {
+          "type": "steps",
+          "id": "postup",
+          "eyebrow": "JAK ZAČÍT",
+          "title": "Od prvního hovoru k řešení.",
+          "items": [
+            {
+              "title": "Řekněte nám svůj záměr",
+              "text": "Nová střecha, oprava nebo dřevěná konstrukce? Začněte telefonátem."
+            },
+            {
+              "title": "Probereme rozsah",
+              "text": "Upřesníme místo, stav a požadované práce."
+            },
+            {
+              "title": "Domluvíme další postup",
+              "text": "Navážeme řešením podle vaší stavby."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "id": "poptavka",
+          "eyebrow": "KONTAKT",
+          "title": "Pojďme probrat váš projekt.",
+          "intro": "Zavolejte nám a řekněte, co potřebujete vyřešit.",
+          "link": {
+            "label": "Zavolat +420 607 719 804",
+            "href": "tel:+420607719804"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/sluzby/",
+      "title": "Služby",
+      "description": "Tesařské, pokrývačské a klempířské práce v Hradci Králové.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "uvod",
+          "variant": "cover",
+          "eyebrow": "NAŠE SLUŽBY",
+          "title": "Řemesla, která drží střechu pohromadě.",
+          "intro": "Tesařské konstrukce, střešní krytiny a klempířské prvky pro novou výstavbu i rekonstrukce.",
+          "media": {
+            "src": "/assets/tesari-hero.jpg",
+            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+          },
+          "actions": [
+            {
+              "label": "Zavolat +420 607 719 804",
+              "href": "tel:+420607719804"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "tesarstvi",
+          "eyebrow": "01 / TESAŘSTVÍ",
+          "title": "Konstrukce ze dřeva.",
+          "items": [
+            {
+              "title": "Krovy a střešní konstrukce",
+              "text": "Tesařské práce pro novostavby i obnovu střech.",
+              "link": {
+                "label": "Detail tesařských prací",
+                "href": "/tesarske-prace/"
+              }
+            },
+            {
+              "title": "Dřevostavby",
+              "text": "Dřevěné konstrukce podle konkrétního záměru.",
+              "link": {
+                "label": "Detail tesařských prací",
+                "href": "/tesarske-prace/"
+              }
+            },
+            {
+              "title": "Půdní vestavby",
+              "text": "Tesařské práce pro využití prostoru pod střechou.",
+              "link": {
+                "label": "Detail tesařských prací",
+                "href": "/tesarske-prace/"
+              }
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "pokryvacstvi",
+          "eyebrow": "02 / POKRÝVAČSTVÍ",
+          "title": "Krytina a obnova střech.",
+          "items": [
+            {
+              "title": "Pokládka krytin",
+              "text": "Krytina jako součást funkčního střešního pláště.",
+              "link": {
+                "label": "Detail pokrývačských prací",
+                "href": "/pokryvacske-prace/"
+              }
+            },
+            {
+              "title": "Opravy střech",
+              "text": "Řešení poškozených částí střechy.",
+              "link": {
+                "label": "Detail pokrývačských prací",
+                "href": "/pokryvacske-prace/"
+              }
+            },
+            {
+              "title": "Rekonstrukce",
+              "text": "Výměna krytiny a navazující práce.",
+              "link": {
+                "label": "Detail pokrývačských prací",
+                "href": "/pokryvacske-prace/"
+              }
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "klempirstvi",
+          "eyebrow": "03 / KLEMPÍŘSTVÍ",
+          "title": "Detaily, na kterých záleží.",
+          "items": [
+            {
+              "title": "Oplechování",
+              "text": "Klempířské prvky pro zakončení střechy.",
+              "link": {
+                "label": "Detail klempířských prací",
+                "href": "/klempirske-prace/"
+              }
+            },
+            {
+              "title": "Střešní detaily",
+              "text": "Zpracování detailů v návaznosti na střešní konstrukci.",
+              "link": {
+                "label": "Detail klempířských prací",
+                "href": "/klempirske-prace/"
+              }
+            },
+            {
+              "title": "Navazující práce",
+              "text": "Klempířské řešení spolu s pokrývačskými pracemi.",
+              "link": {
+                "label": "Detail klempířských prací",
+                "href": "/klempirske-prace/"
+              }
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "id": "poptavka",
+          "eyebrow": "KONTAKT",
+          "title": "Pojďme probrat váš projekt.",
+          "intro": "Zavolejte nám a řekněte, co potřebujete vyřešit.",
+          "link": {
+            "label": "Zavolat +420 607 719 804",
+            "href": "tel:+420607719804"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/kontakt/",
+      "title": "Kontakt",
+      "description": "Kontakt na Tesaře Hradec. Volejte +420 607 719 804.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "uvod",
+          "variant": "cover",
+          "eyebrow": "KONTAKT · HRADEC KRÁLOVÉ",
+          "title": "Stavba začíná rozhovorem.",
+          "intro": "Potřebujete novou střechu, opravu nebo tesařskou konstrukci? Zavolejte nám.",
+          "media": {
+            "src": "/assets/tesari-hero.jpg",
+            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+          },
+          "actions": [
+            {
+              "label": "Zavolat +420 607 719 804",
+              "href": "tel:+420607719804"
+            }
+          ]
+        },
+        {
+          "type": "contact",
+          "id": "udaje",
+          "eyebrow": "KONTAKTNÍ ÚDAJE",
+          "title": "Ozvěte se nám.",
+          "address": "Ing. Petr Vacek\nK Meteoru 775/2\n503 11 Hradec Králové – Svobodné Dvory\nIČ: 88756360 · DIČ: CZ8504033274",
+          "email": "vacek.ptr@gmail.com",
+          "phone": "+420 607 719 804"
+        },
+        {
+          "type": "cta",
+          "id": "poptavka",
+          "eyebrow": "KONTAKT",
+          "title": "Pojďme probrat váš projekt.",
+          "intro": "Zavolejte nám a řekněte, co potřebujete vyřešit.",
+          "link": {
+            "label": "Zavolat +420 607 719 804",
+            "href": "tel:+420607719804"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/tesarske-prace/",
+      "title": "Tesařské práce",
+      "description": "Krovy, dřevěné pergoly, přístřešky, doplňkové stavby a opravy konstrukcí v Hradci Králové.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "uvod",
+          "variant": "cover",
+          "eyebrow": "TESAŘI HRADEC · SLUŽBY",
+          "title": "Tesařské práce.",
+          "intro": "Krovy, dřevěné pergoly, přístřešky, doplňkové stavby a opravy konstrukcí v Hradci Králové.",
+          "media": {
+            "src": "/assets/tesari-hero.jpg",
+            "alt": "Ilustrační fotografie stavby dřevěného krovu"
+          },
+          "actions": [
+            {
+              "label": "Zavolat +420 607 719 804",
+              "href": "tel:+420607719804"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "rozsah",
+          "eyebrow": "CO PRO VÁS ZAJISTÍME",
+          "title": "Práce podle vaší stavby.",
+          "items": [
+            {
+              "title": "Krovy a střešní konstrukce",
+              "text": "Výroba, montáž, opravy a rekonstrukce krovů."
+            },
+            {
+              "title": "Pergoly, altány a přístřešky",
+              "text": "Zakázkové dřevěné konstrukce na míru."
+            },
+            {
+              "title": "Zahradní a doplňkové stavby",
+              "text": "Domky, garážová stání a skladové objekty."
+            },
+            {
+              "title": "Tesařské prvky na míru",
+              "text": "Schodiště, trámy, vazníky a dekorativní prvky."
+            },
+            {
+              "title": "Opravy dřevěných konstrukcí",
+              "text": "Výměna poškozených částí a sanace."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "id": "poptavka",
+          "eyebrow": "POPTÁVKA",
+          "title": "Probereme váš záměr.",
+          "intro": "Zavolejte nám nebo napište.",
+          "link": {
+            "label": "Přejít na kontakt",
+            "href": "/kontakt/"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/pokryvacske-prace/",
+      "title": "Pokrývačské práce",
+      "description": "Nové střechy, pokládka krytin, rekonstrukce a opravy v Hradci Králové.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "uvod",
+          "variant": "cover",
+          "eyebrow": "TESAŘI HRADEC · SLUŽBY",
+          "title": "Pokrývačské práce.",
+          "intro": "Nové střechy, pokládka krytin, rekonstrukce a opravy v Hradci Králové.",
+          "media": {
+            "src": "/assets/tesari-hero.jpg",
+            "alt": "Ilustrační fotografie stavby dřevěného krovu"
+          },
+          "actions": [
+            {
+              "label": "Zavolat +420 607 719 804",
+              "href": "tel:+420607719804"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "rozsah",
+          "eyebrow": "CO PRO VÁS ZAJISTÍME",
+          "title": "Práce podle vaší stavby.",
+          "items": [
+            {
+              "title": "Pokládka krytin",
+              "text": "Pálené a betonové tašky, plech, šindele a vláknocement."
+            },
+            {
+              "title": "Rekonstrukce střech",
+              "text": "Výměna krytiny a opravy poškozených částí."
+            },
+            {
+              "title": "Střešní doplňky",
+              "text": "Hřebenáče, sněhové zábrany, prostupy a větrání."
+            },
+            {
+              "title": "Hydroizolace",
+              "text": "Pojistné fólie a skladba střešního pláště."
+            },
+            {
+              "title": "Opravy a údržba",
+              "text": "Lokální opravy a výměny poškozených tašek."
+            },
+            {
+              "title": "Ploché střechy",
+              "text": "Asfaltové pásy, zateplení a odvodnění."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "id": "poptavka",
+          "eyebrow": "POPTÁVKA",
+          "title": "Probereme váš záměr.",
+          "intro": "Zavolejte nám nebo napište.",
+          "link": {
+            "label": "Přejít na kontakt",
+            "href": "/kontakt/"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/klempirske-prace/",
+      "title": "Klempířské práce",
+      "description": "Oplechování střech a komínů, okapy, falcované krytiny a zakázkové plechové prvky.",
+      "sections": [
+        {
+          "type": "hero",
+          "id": "uvod",
+          "variant": "cover",
+          "eyebrow": "TESAŘI HRADEC · SLUŽBY",
+          "title": "Klempířské práce.",
+          "intro": "Oplechování střech a komínů, okapy, falcované krytiny a zakázkové plechové prvky.",
+          "media": {
+            "src": "/assets/tesari-hero.jpg",
+            "alt": "Ilustrační fotografie stavby dřevěného krovu"
+          },
+          "actions": [
+            {
+              "label": "Zavolat +420 607 719 804",
+              "href": "tel:+420607719804"
+            }
+          ]
+        },
+        {
+          "type": "cards",
+          "id": "rozsah",
+          "eyebrow": "CO PRO VÁS ZAJISTÍME",
+          "title": "Práce podle vaší stavby.",
+          "items": [
+            {
+              "title": "Oplechování střech a komínů",
+              "text": "Lemování, krycí lišty a komínové pásy."
+            },
+            {
+              "title": "Okapové systémy",
+              "text": "Žlaby, svody, kotlíky a háky."
+            },
+            {
+              "title": "Plechové parapety",
+              "text": "Výroba na míru, montáž a výměny."
+            },
+            {
+              "title": "Falcované krytiny",
+              "text": "Titanzinek, hliník a měď."
+            },
+            {
+              "title": "Atiky, římsy a štíty",
+              "text": "Ochrana exponovaných částí stavby."
+            },
+            {
+              "title": "Zakázkové klempířské prvky",
+              "text": "Výroba podle projektu nebo požadavku."
+            }
+          ]
+        },
+        {
+          "type": "cta",
+          "id": "poptavka",
+          "eyebrow": "POPTÁVKA",
+          "title": "Probereme váš záměr.",
+          "intro": "Zavolejte nám nebo napište.",
+          "link": {
+            "label": "Přejít na kontakt",
+            "href": "/kontakt/"
+          }
+        }
+      ]
+    }
+  ]
+}
