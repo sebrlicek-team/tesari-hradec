@@ -12,7 +12,7 @@ Toto je kopie klientského webu z [CCNplus/tesari-hradec](https://github.com/CCN
 
 ## Cesty a indexace
 
-Základ šablony používá absolutní cesty od kořene webu. Přípravný skript je pro projektovou GitHub Pages adresu doplní o `/tesari-hradec/`, přepíše canonical a sitemap, zkontroluje odkazy a vytvoří náhradní HTML přechody pro čtyři původní cesty `.htm`. GitHub Pages neposkytuje v tomto projektu skutečné HTTP 301 z `_redirects`; HTML přechody používají meta refresh a odkaz.
+Základ šablony používá absolutní cesty od kořene webu. Přípravný skript je převádí na relativní cesty funkční na projektové adrese i na vlastní doméně, přepíše canonical a sitemap, zkontroluje odkazy a vytvoří náhradní HTML přechody pro čtyři původní cesty `.htm`. GitHub Pages neposkytuje v tomto projektu skutečné HTTP 301 z `_redirects`; HTML přechody používají meta refresh a odkaz.
 
 Náhled zůstává `noindex,nofollow` v každém HTML včetně 404 a starých cest. GitHub Pages ignoruje soubor `_headers`, takže na této platformě nelze z projektu nastavit `X-Robots-Tag`. Soubor `robots.txt` v projektové cestě není kořenovým robots souborem celé domény github.io; zákaz indexace proto stojí na meta robots v HTML. Produkční doména a povolení indexace vyžadují samostatné zadání.
 
