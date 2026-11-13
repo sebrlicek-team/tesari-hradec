@@ -31,7 +31,7 @@
       "href": "/kontakt/"
     }
   ],
-  "footer": "Ing. Petr Vacek · K Meteoru 775/2, Hradec Králové – Svobodné Dvory · IČ 88756360. Úvodní fotografie je ilustrační.",
+  "footer": "Ing. Petr Vacek · K Meteoru 775/2, Hradec Králové – Svobodné Dvory · IČ 88756360.",
   "footerLinks": [
     {
       "label": "Služby",
@@ -60,8 +60,8 @@
           "title": "Dobrá střecha začíná poctivou prací.",
           "intro": "Střechy na klíč, tesařské, pokrývačské a klempířské práce. Od konstrukce po dokončení.",
           "media": {
-            "src": "/assets/tesari-hero.jpg",
-            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+            "src": "/assets/strecha-realizace.jpg",
+            "alt": "Střecha rodinného domu na fotografii z původního webu"
           },
           "actions": [
             {
@@ -88,6 +88,10 @@
               "link": {
                 "label": "Více o službách",
                 "href": "/tesarske-prace/"
+              },
+              "image": {
+                "src": "/assets/tesarske-prace-realizace.jpg",
+                "alt": "Dřevěná konstrukce přístřešku na fotografii z původního webu"
               }
             },
             {
@@ -97,6 +101,10 @@
               "link": {
                 "label": "Více o službách",
                 "href": "/pokryvacske-prace/"
+              },
+              "image": {
+                "src": "/assets/pokryvacske-prace-realizace.jpg",
+                "alt": "Hotová střešní krytina na fotografii z původního webu"
               }
             },
             {
@@ -106,6 +114,10 @@
               "link": {
                 "label": "Více o službách",
                 "href": "/klempirske-prace/"
+              },
+              "image": {
+                "src": "/assets/klempirske-prace-realizace.jpg",
+                "alt": "Oplechování střechy na fotografii z původního webu"
               }
             }
           ]
@@ -116,8 +128,8 @@
           "eyebrow": "NAVAZUJÍCÍ ŘEMESLA",
           "title": "Jedna střecha. Jeden celek.",
           "image": {
-            "src": "/assets/tesari-hero.jpg",
-            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+            "src": "/assets/tesarske-prace-realizace.jpg",
+            "alt": "Dřevěná konstrukce přístřešku na fotografii z původního webu"
           },
           "paragraphs": [
             "Střešní konstrukce, krytina a klempířské detaily musí fungovat společně.",
@@ -170,8 +182,8 @@
           "title": "Řemesla, která drží střechu pohromadě.",
           "intro": "Tesařské konstrukce, střešní krytiny a klempířské prvky pro novou výstavbu i rekonstrukce.",
           "media": {
-            "src": "/assets/tesari-hero.jpg",
-            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+            "src": "/assets/strecha-realizace.jpg",
+            "alt": "Střecha rodinného domu na fotografii z původního webu"
           },
           "actions": [
             {
@@ -302,8 +314,8 @@
           "title": "Stavba začíná rozhovorem.",
           "intro": "Potřebujete novou střechu, opravu nebo tesařskou konstrukci? Zavolejte nám.",
           "media": {
-            "src": "/assets/tesari-hero.jpg",
-            "alt": "Ilustrační fotografie tesařů při stavbě krovu"
+            "src": "/assets/strecha-realizace.jpg",
+            "alt": "Střecha rodinného domu na fotografii z původního webu"
           },
           "actions": [
             {
@@ -347,8 +359,8 @@
           "title": "Tesařské práce.",
           "intro": "Krovy, dřevěné pergoly, přístřešky, doplňkové stavby a opravy konstrukcí v Hradci Králové.",
           "media": {
-            "src": "/assets/tesari-hero.jpg",
-            "alt": "Ilustrační fotografie stavby dřevěného krovu"
+            "src": "/assets/tesarske-prace-realizace.jpg",
+            "alt": "Dřevěná konstrukce přístřešku na fotografii z původního webu"
           },
           "actions": [
             {
@@ -411,8 +423,8 @@
           "title": "Pokrývačské práce.",
           "intro": "Nové střechy, pokládka krytin, rekonstrukce a opravy v Hradci Králové.",
           "media": {
-            "src": "/assets/tesari-hero.jpg",
-            "alt": "Ilustrační fotografie stavby dřevěného krovu"
+            "src": "/assets/pokryvacske-prace-realizace.jpg",
+            "alt": "Hotová střešní krytina na fotografii z původního webu"
           },
           "actions": [
             {
@@ -479,8 +491,8 @@
           "title": "Klempířské práce.",
           "intro": "Oplechování střech a komínů, okapy, falcované krytiny a zakázkové plechové prvky.",
           "media": {
-            "src": "/assets/tesari-hero.jpg",
-            "alt": "Ilustrační fotografie stavby dřevěného krovu"
+            "src": "/assets/klempirske-prace-realizace.jpg",
+            "alt": "Oplechování střechy na fotografii z původního webu"
           },
           "actions": [
             {
@@ -534,5 +546,11 @@
         }
       ]
     }
-  ]
+  ],
+  "logo": {
+    "src": "/assets/tesari-logo.png",
+    "alt": "Tesaři Hradec Králové",
+    "width": 1000,
+    "height": 654
+  }
 }

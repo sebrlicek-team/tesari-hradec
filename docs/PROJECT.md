@@ -10,8 +10,8 @@
 
 ## Struktura a zvolený vzhled
 - Stránky: úvod, služby, tesařské práce, pokrývačské práce, klempířské práce, kontakt. Sekce: hero, služby, přístup, postup, telefonická výzva. Čtyři původní cesty .htm jsou v public/_redirects přesměrovány 301.
-- Vzhled: tmavě zelená, teplá měděná, světlé pozadí; široká ilustrační fotografie krovu. Značka je zatím textová, protože přiložené logo není k dispozici a stažení loga ze starého webu prohlížeč nepovolil.
-- Fotografie `public/assets/tesari-hero.jpg` je generovaná ilustrace, nikoli realizace klienta. Video banner se doplní později.
+- Vzhled: tmavě zelená, teplá měděná, světlé pozadí; původní klientské logo a fotografie ze starého webu jsou doplněné v kopii pro GitHub Pages.
+- Původní `public/assets/tesari-hero.jpg` je generovaná ilustrace; kopie pro GitHub Pages ji nahrazuje fotografiemi ze starého webu. Video banner se doplní později.
 
 ## Schválená rozhodnutí
 - 12. 11. 2026: uživatel zadal nový web podle šablony, samostatnou větev a PR, zachování noindex na pracovní adrese a standardní příkazy.
@@ -30,7 +30,7 @@
 - Vizuální kontrola desktopu a mobilu nebyla možná: prohlížeč zamítl otevření lokálního náhledu. GitHub check Test and build prošel pro poslední commit PR i sloučený commit na main.
 
 ## Chybějící podklady a otevřené otázky
-- Logo, video banner a skutečné fotografie: dodá uživatel; potom nahradit textovou značku a ilustrační fotografii.
+- Video banner dodá uživatel později. Logo a fotografie ze starého webu byly 13. 11. 2026 dohledány a začleněny do kopie pro GitHub Pages.
 - Telefon, e-mail, adresa a rozsah služeb byly převzaty z původního webu; před ostrým zveřejněním potvrdit aktuálnost.
 - E-mail a příjemce formuláře: neurčeny; bez jejich zadání formulář nezapojovat.
 - Cloudflare přístup, vazba Workeru na GitHub a preview builds: nelze ověřit, protože přístup do Cloudflare dashboardu nebyl povolen.
@@ -48,3 +48,9 @@
 - Po prvním Pages deployi (commit `782f6b39d1eab2e0f83add0ff474538e8e8d8cbd`) workflow prošlo, ale výchozí adresa přesměrovává na `http://tesari-hradec.seb-dev.cloud/`; HTTPS certifikát vlastní domény neodpovídá hostname. Odkazy s cestou `/tesari-hradec/` na této doméně vracely 404. Relativní odkazy jsou připravené v následné opravě; finální volba domény a nové nasazení zbývají.
 - Pro další sestavení se jako předpoklad používá stávající vlastní Pages doména `https://tesari-hradec.seb-dev.cloud/`; její HTTPS certifikát zatím není platný.
 - Ověření po PR #3: commit `41b3e10b7de11d8aec17f46e7340307cb09e9042` má úspěšné kontroly `Test and build`, `build` i `deploy` v GitHub Actions. Na `http://tesari-hradec.seb-dev.cloud/` odpovídá všech 6 stránek, obrázek a 4 původní cesty; interní odkazy byly ověřeny, canonical a sitemap míří na `https://tesari-hradec.seb-dev.cloud/`, HTML má `noindex,nofollow` a robots.txt `Disallow: /`. HTTPS certifikát vlastní domény stále neodpovídá hostname, takže bezpečné nasazení není potvrzené. Vizuální kontrolu prohlížečem zamítla kontrola přístupu k této doméně.
+
+## Doplnění materiálů ze starého webu (13. 11. 2026)
+- HTTP adresa `http://tesari-hradec.cz.ccn2.profiwh.com/` je dostupná; z pěti stránek bylo uloženo logo, 20 fotografií realizací, titulní fotografie, texty a kontaktní údaje. Jediný nefunkční odkazovaný soubor je dekorativní obrázek v patičce kontaktní stránky (404).
+- Do Pages webu jsou vybrány původní logo, titulní fotografie a po jedné fotografii pro každou ze tří služeb. Titulní ilustrace a poznámka o ilustraci se z aktivního obsahu odstranily.
+- Původní web obsahuje MP4 video. Soubor je archivován mezi podklady, ale v aktivním banneru zůstává fotografie podle uživatelova zadání. Loga výrobců a staré technické CSS/JS nejsou převzaty do aktivního webu.
+- Po aktualizaci ověřit `npm test && npm run build`, Pages přípravu, check `Test and build` a živé nasazení; HTTPS vlastní domény je samostatný otevřený problém.
